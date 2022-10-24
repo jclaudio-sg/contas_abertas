@@ -22,7 +22,7 @@ class SaveCategoryUseCaseImpl implements SaveCategoryUseCase {
     if ( categoryEntity.isNullDescription() ) {
       return Left( AppFailure( message: Message.MSG_CATEGORY_DESCRIPTION_ISNULL ) );
     }
-    return repository.save(categoryEntity);
+    return await repository.save(categoryEntity);
   }
 
 }

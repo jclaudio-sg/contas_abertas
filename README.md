@@ -1,4 +1,4 @@
-# app
+# Aplicativo Contas Abertas
 
 A new Flutter project.
 
